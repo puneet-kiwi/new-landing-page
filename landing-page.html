@@ -1,0 +1,667 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Relish MBA</title>
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+     
+      <link href="css/bootstrap-overwrite.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/jcarousel.responsive.min.css">
+      <link href="css/carousal.css" rel="stylesheet">
+       <link href="css/relish-style.css" rel="stylesheet">
+
+      <script src="js/jquery-1.11.2.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="js/jcarousel.responsive.js"></script>
+      <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+      <script type="text/javascript" src="js/jquery.selectbox-0.2.js" ></script>
+      <script type="text/javascript" src="js/bootstrap-dialog.min.js" ></script>
+
+
+    </head>
+    <body onload="load()">
+
+      <!-- header-starts -->
+        <nav class="navbar navbar-inverse navbar-fixed-top relish-header">
+          <div class="container">
+            <div class="navbar-header">
+              <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed tog-bg tabb-bg" type="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar click-tab-icon"></span>
+                <span class="icon-bar click-tab-icon"></span>
+                <span class="icon-bar click-tab-icon"></span>
+              </button>
+              <a href="javascript:void(0)" class="navbar-brand"><img src="images/relishmba_big.png"></a>
+            </div>
+            <div class="navbar-collapse collapse tog-brd nab-bgg" id="navbar">
+              <ul class="nav navbar-nav sidenav">
+                <li class="side-brd"><a href="http://relishmba.com" class="brd-pdg nav-txt">HOME</a></li>
+                <li class="side-brd"><a href="#about" class="brd-pdg nav-txt" id="about_relish">ABOUT</a></li>
+                <li class="side-bord"><a href="http://relishmba.com/help/contact" class="brd-pdg nav-txt">CONTACT</a></li>
+                <li class="login-btn"><a href="http://relishmba.com/login" class="log-bt">DARDEN LOGIN</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      <!-- header-ends -->
+
+      <!-- mid-banner-starts -->
+        <div class="jumbotron mid-ban">
+          <div class="container">
+            <div class="row" >
+              <div class="col-lg-4 ban-pr mid-bn-width" >
+                <img alt="mba-student-icon" src="images/mba-students-icon.png" class="ban-icon" >
+                <h2>MBA Students</h2>
+                <p class="panel-text" >This is a recruiting platform designed around you. RelishMBA is a centralized hub that lets you streamline your recruiting processes, connect with more employers, and easily track your networking activity.</p>
+                <p class="text-cen"><a role="button" data-target="#mba-students" data-toggle="modal" href="#" class="btn btn-default getinfo-btn">GET MORE INFO</a></p>
+                <span class="border-line"></span>
+              </div>
+              <div class="col-lg-4 ban-plr mid-ban-width">
+                <img alt="recruiters-icon" src="images/recruiters-icon.png" class="ban-recruiter-icon">
+                <h2>Employers</h2>
+                <p class="panel-text">Recruit smarter. Promote your company’s value proposition, connect with top MBA talent earlier, use our candidate relationship management tools to coordinate across teams and streamline the recruiting process.</p>
+                <p class="text-cen"><a role="button" href="#" data-target="#employers" data-toggle="modal" class="btn btn-default getinfo-btn">GET MORE INFO</a></p>
+                <span class="border-line"></span>
+              </div>
+              <div class="col-lg-4 ban-pl mid-bn-width">
+                <img alt="career-service-icon" src="images/career-service-icon.png" class="ban-career-icon">
+                <h2>Career Services</h2>
+                <p class="panel-text">We’re here to help and we’re looking for partners. Centralize your school’s recruiting resources on one platform, bring more employers to campus, and follow your students’ recruiting progress (and it’s free).</p>
+                <p class="text-cen"><a role="button" href="#" data-target="#career" data-toggle="modal" class="btn btn-default getinfo-btn">GET MORE INFO</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cls"></div>
+      <!-- mid-banner-ends -->
+
+
+      <!-- mobile-version-starts -->
+      <div class="container acc-mrtop">
+        <div id="accordion" class="panel-group">
+          <div class="panel panel-default">
+            <div class="panel-heading main-collapse-head" data-target="#student-info" data-parent="#accordion" data-toggle="collapse" href="#student-info" aria-controls="student-info" role="tab" >
+              <h4 class="panel-title collapse-title accor-head" >
+                <div class="new-collapsed"><span class="accor-icon"><img src="images/mobile-student-icon.png"></span><span class="acc-head">MBA STUDENTS</span><span class="collapse-minus"></span></div>
+              </h4>
+            </div>
+            <div class="panel-collapse collapse" id="student-info" style="height: 0px;" role="tabpanel">
+              <div class="panel-body panel-acc">
+                <div class="col-md-12 brd-pdg">
+                  <p class="acc-body-text">This is a recruiting platform designed around you. RelishMBA is a centralized hub that lets you streamline your recruiting processes, connect with more employers, and easily track your networking activity.</p>
+                  <p class="text-cen"><a role="button" data-target="#mba-students" data-toggle="modal" href="#" class="btn btn-default getinfo-btn">GET MORE INFO</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading main-collapse-head" data-target="#emp" data-parent="#accordion" data-toggle="collapse" href="#emp" aria-controls="emp" >
+              <h4 class="panel-title collapse-title accor-head">
+                <div class="new-collapsed"><span class="accor-icon"><img src="images/mobile-employer-icon.png"></span><span class="acc-head">EMPLOYERS</span><span class="collapse-minus"></span></div>
+              </h4>
+            </div>
+            <div class="panel-collapse collapse" id="emp" style="height: 0px;">
+              <div class="panel-body panel-acc">
+                <div class="col-md-12 brd-pdg">
+                  <p class="acc-body-text">Recruit smarter. Promote your company’s value proposition, connect with top MBA talent earlier, use our candidate relationship management tools to coordinate across teams and streamline the recruiting process.</p>
+                  <p class="text-cen"><a role="button" data-target="#employers" data-toggle="modal" href="#" class="btn btn-default getinfo-btn">GET MORE INFO</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading main-collapse-head" data-target="#ser" href="#ser" data-parent="#accordion" data-toggle="collapse" aria-controls="ser" > 
+              <h4 class="panel-title collapse-title accor-head">
+                <div class="new-collapsed" ><span class="accor-icon"><img src="images/mobile-career-icon.png"></span><span class="acc-head">CAREER SERVICES</span><span class="collapse-minus"></span></div>
+              </h4>
+            </div>
+            <div class="panel-collapse collapse" id="ser" style="height: 0px;">
+              <div class="panel-body panel-acc">
+                <div class="col-md-12 brd-pdg">
+                  <p class="acc-body-text">We’re here to help and we’re looking for partners. Centralize your school’s recruiting resources on one platform, bring more employers to campus, and follow your students’ recruiting progress (and it’s free).</p>
+                  <p class="text-cen"><a role="button" data-target="#career" data-toggle="modal" href="#" class="btn btn-default getinfo-btn">GET MORE INFO</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- mobile-version-ends -->
+
+      <!-- about-relish-starts -->
+        <div class="about-panel" id="about" >
+          <div class="container pad-none">
+            <div class="row mr-top mrg-both">
+              <div class="col-md-5 abt-imggg" >
+                <div class="relish-video">
+                <iframe width="420" height="345"
+  src="http://www.youtube.com/embed/YOUWcAx9X5Y">
+  </iframe>
+          
+                </div>
+              </div>
+              <div class="col-md-7 abt-imggg ">
+                <h3 class="hmtmr">About RelishMBA</h3>
+                <p class="about-text">RelishMBA is a centralized recruiting platform designed to streamline how students at top business school connect with the companies that recruit them. With filtered search tools and customizable profile pages, student and recruiters can find and target candidates and firms with the best fit. Access all of your school’s recruiting resources from one platform and easily track your networking relationships. An exclusive network for MBAs, Career Services, and Employers.</p>
+                <div class="col-md-12 side-padd minpdd no-pad text-center">
+                  <div class="col-md-4 btn-wdh side-padd"><button class="btn btn-default mba-btn-info" data-target="#mba-students" data-toggle="modal" type="submit">MBA STUDENTS</button></div>
+                  <div class="col-md-4 btn-wdh"><button class="btn btn-default empp-btn-info" data-target="#employers" data-toggle="modal" type="submit">EMPLOYERS</button></div>
+                  <div class="col-md-4 btn-wdh side-padd"><button class="btn btn-default career-btn-info" data-target="#career" data-toggle="modal" type="submit">CAREER SERVICES</button></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- about-relish-ends -->
+
+      <!-- partner-school-starts -->
+        <div class="container prt-cont">
+          <div class="row">
+            <h4>Pilot Program Partners</h4>
+            <div class="inst-ptnr">Institutional Users:</div>
+            <div class="col-md-12 empl-pnll">
+                <div class="empp-list">
+                  <ul class="empp-list">
+                    <li>UVA Darden School of Business Career Development Center</li>
+                    <li>Darden Class of 2015, Class of 2016, and Alumni</li>
+                  </ul>
+                </div>
+            </div>
+            <div class="inst-ptnr">Employers:</div>
+            <div class="col-md-12 empl-pnll">
+                <div class="emp-list">
+                  <ul class="emp-list">
+                    <li>AT Kearney</li>
+                    <li>Accenture</li>
+                    <li>Amazon</li>
+                    <li>Bain</li>
+                    <li>Bank of America</li>
+                    <li>Barclays</li>
+                    <li>Boston Consulting Group</li>
+                    <li>Corning</li>
+                    <li>Crane</li>
+                    <li>Danaher</li>
+                    <li>Deloitte</li>
+                    <li>DuPont</li>
+                    <li>Elegant Solutions</li>
+                    <li>Emerson</li>
+                    <li>FinchandVail</li>
+                    <li>General Mills</li>
+                    <li>General Motors</li>
+                    <li>Goldman Sachs</li>
+                    <li>Google</li>
+                    <li>HEB</li>
+                    <li>Harris Williams</li>
+                    <li>Home Depot</li>
+                    <li>Kalleo</li>
+                    <li>Medtronic</li>
+                    <li>Progressive</li>
+                    <li>Revamplabs</li>
+                    <li>Salesforce</li>
+                    <li>SunTrust</li>
+                    <li>UPS</li>
+                    <li>Wells Fargo</li>
+                    <li>WillowTree</li>                
+                  </ul>
+                </div>
+            </div>
+            <p class="com-soon">More Schools and Employers <span> Coming Soon…</span></p>
+          </div>
+        </div>
+
+
+        <div data-ride="carousel" class="carousel slide lower-caro" id="myCarousel">
+
+          <div role="listbox" class="carousel-inner">
+            <div class="item lower-caro active">
+              <div class="container">
+                <div class="carousel-caption cr-padd">
+                  <h3 class="hmtop">Recruiter Testimonials</h3>
+                  <img alt="Generic placeholder image" src="images/recriut-image.jpg" class="img-circle caro-img">
+                  <p class="carousal-text">“RelishMBA is a difference maker.  It looks at the MBA landscape in a very collaborative way that students are accustomed to… It allows us to share and collaborate with students beyond the basic information-sharing other sites provide.  It allows us to give them an inside view of who we are in more of a relationship-building approach</p>
+                  <span class="crou-logo"><img src="images/comp-logo.png"></span>
+                  <p class="carousal-hd"> Todd Stout, Manager <span>(Global Sourcing Strategy, Corning)</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- carousal-ends -->
+
+      <!-- footer-starts -->
+        <footer class="footer">
+          <div class="container">
+            <div class="social-bg">
+              <span><a href="https://www.facebook.com/relishMBA" target="_blank"> <img src="images/facebook-logo.png" alt="fb-icon" class="mrn-rt social-icns"></a></span>
+              <span><a href="https://twitter.com/relishmba" target="_blank"><img src="images/twitter-icon.png" alt="fb-icon" class="mrn-rt social-icns"></a></span>
+              <span><a href="https://www.linkedin.com/company/relishmba" target="_blank"><img src="images/linkedin-icon.png" alt="fb-icon" class="social-icns"></a></span>
+            </div>
+            <div class="footer-cont">
+              <div class="footer-bar">
+                <ul>
+                  <li><a href="#about" title="" id="about_relish">ABOUT</a></li>
+                  <li><a href="http://relishmba.com/help/terms" title="">TERMS OF SERVICE</a></li>
+                  <li><a href="http://relishmba.com/pages/termsandconditions" title="">TERMS AND CONDITIONS</a></li>
+                  <li><a href="http://relishmba.com/help/privacy" title="">PRIVACY POLICY</a></li>
+                  <li><a href="http://relishmba.com/help/contact" title="">CONTACT</a></li>
+                </ul>
+              </div>
+              <div class="copy-text">
+                <span>Copyright 2015 relishmba.com. <span class="rhts">All Rights are reserved.</span></span>
+              </div>
+            </div>
+          </div>
+        </footer>
+      <!-- footer-ends -->
+
+      <!-- mbastudent-modal-starts -->
+        <div class="modal fade" id="mba-students" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-marg">
+            <div class="modal-content model-radius">
+              <div class="modal-header modal-head">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">MBA STUDENTS</h4>
+              </div>           
+
+              <div class="modal-body modal-mid-txt">            
+                <form>
+                  <div class="form-group"> 
+                    <input type="text" id="mba_name" class="form-control form-ctl" id="" placeholder="Name">
+                  </div>
+                  <div class="form-group"> 
+                    <input type="text" id="mba_email" class="form-control form-ctl" id="" placeholder="Email Address">
+                  </div>
+                  <div class="form-group"> 
+                    <input type="text" id="mba_school" class="form-control form-ctl" id="" placeholder="School">
+                  </div>
+                  <div class="form-group sel-mt"> 
+                    <select name="" id="enroll_id" tabindex="1" class="form-control form-ctl" placeholder="Insert here...">
+                      <option value="">Enrollment Status</option>
+                      <option value="Class of 2015">Class of 2015</option>
+                      <option value="Class of 2016">Class of 2016</option>
+                      <option value="Class of 2017">Class of 2017</option>
+                      <option value="Alumni">Alumni</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <div class="checkbox chk-box">
+                      <input type="checkbox" checked="true" value="1" id="mbaEditSubscription" class="css-checkbox" name="data[User][news_letter_subscription]"><label class="css-label" for="mbaEditSubscription"></label>
+                      <p class="help-text">Keep me updated about <strong>RelishMBA</strong> by email</p>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="cls"></div>
+              <div class="modal-footer modal-foot">
+                <button type="button" class="btn modal-btn" onclick="postMbaFormToGoogle()">GET RELISHMBA AT MY SCHOOL</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- mbastudent-modal-ends --> 
+
+        <!-- career-modal-starts -->
+          <div class="modal fade" id="career" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-marg">
+              <div class="modal-content model-radius">
+                <div class="modal-header modal-head">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title" id="myModalLabel">CAREER SERVICES</h4>
+                </div>         
+                <div class="modal-body modal-mid-txt">
+                  <form>
+                    <div class="form-group"> 
+                      <input type="name" id="carrier_service_name" class="form-control form-ctl" id="" placeholder="Name">
+                    </div>
+                    <div class="form-group"> 
+                      <input type="email" id="carrier_service_email" class="form-control form-ctl" id="" placeholder="Email Address">
+                    </div>
+
+                    <div class="form-group"> 
+                      <input type="text" id="carrier_service_school" class="form-control form-ctl" id="" placeholder="School">
+                    </div>   
+            
+                    <div class="form-group"> 
+                      <input type="text" id="carrier_service_job_title" class="form-control form-ctl" id="" placeholder="Role/Job Title">
+                    </div>
+                    <div class="form-group">
+                      <div class="checkbox chk-box">
+                        <input type="checkbox" checked="true" value="1" id="CarrierServiceEditSubscription" class="css-checkbox" name="data[User][news_letter_subscription]"><label class="css-label" for="CarrierServiceEditSubscription"></label>
+                        <p class="help-text">Keep me updated about <strong>RelishMBA</strong> by email</p>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="cls"></div>
+                <div class="modal-footer modal-foot">
+                  <button type="button" class="btn modal-btn" onclick="postCarrierServiceToGoogle()">GET RELISHMBA AT MY SCHOOL</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- career-modal-ends --> 
+
+          <!-- employers-modal-starts -->
+            <div class="modal fade" id="employers" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-marg">
+                <div class="modal-content model-radius">
+                  <div class="modal-header modal-head">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">EMPLOYERS</h4>
+                  </div>        
+                  <div class="modal-body modal-mid-txt">
+                    <form>
+                      <div class="form-group"> 
+                        <input type="text" id="employer_name" class="form-control form-ctl" id="" placeholder="Name">
+                      </div>
+                      <div class="form-group"> 
+                        <input type="email" id="employer_email" class="form-control form-ctlr" id="" placeholder="Email Address">
+                      </div>
+                      <div class="form-group"> 
+                        <input type="text" id="employer_job_title" class="form-control form-ctlr md-top" id="" placeholder="Job Title">
+                      </div>
+                      <div class="form-group"> 
+                        <input type="text" id="employer_company" class="form-control form-ctlr md-top" id="" placeholder="Company">
+                      </div> 
+                      <div class="form-group"> 
+                        <select name="" id="recruiter_id" tabindex="1" class="form-control form-ctl" placeholder="Insert here...">
+                          <option value="">How many MBAs do you recruit annually?</option>
+                          <option value="25+">25+</option>
+                          <option value="10-25">10-25</option>
+                          <option value="5-10">5-10</option>
+                          <option value="<5"><5</option>
+                          <option value="Don’t Know/Not Sure">Don’t Know/Not Sure</option>
+                        </select>
+                      </div>                 
+                      <div class="form-group">
+                        <div class="checkbox chk-box">
+                          <input type="checkbox" checked="true" value="1" id="employerEditSubscription" class="css-checkbox" name="data[User][news_letter_subscription]"><label class="css-label" for="employerEditSubscription"></label>
+                          <p class="help-text">Keep me updated about <strong>RelishMBA</strong> by email</p>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="cls"></div>
+                  <div class="modal-footer modal-foot">
+                    <button type="button" class="btn modal-btn" onclick="postEmployersToGoogle()">GET RELISHMBA AT MY COMPANY</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          <!-- employers-modal-ends --> 
+
+        <!-- login-modal-starts -->
+          <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-marg">
+              <div class="modal-content model-radius">
+                <div class="modal-header modal-head">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title" id="myModalLabel">LOGIN</h4>
+                </div>
+                <div class="modal-body modal-mid-txt">
+                  <form>
+                    <div class="form-group"> 
+                      <input type="name" class="form-control form-ctl" id="" placeholder="Name">
+                    </div>
+                    <div class="form-group"> 
+                      <input type="email" class="form-control form-ctl" id="" placeholder="Password">
+                    </div>
+                    <div class="mid-fort"> 
+                      <div class="col-md-6 side-padd">
+                        <div class="form-group">
+                          <div class="checkbox chk-box chk-mopp">
+                            <input type="checkbox" checked="true" value="1" id="EditSubscription3" class="css-checkbox" name="data[User][news_letter_subscription]"><label class="css-label ckh-foot" for="EditSubscription3"></label>
+                            <p class="remb-text">Remember Me</p>
+                          </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6 side-padd">
+                        <p class="forgot-text"><a href="">Forgot Password?</a></p>
+                     </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="cls"></div>
+                <div class="modal-footer modal-foot">
+                  <button type="button" class="btn modal-btn">LOGIN</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- login-modal-ends --> 
+
+        <!-- forgot-pass-modal-starts -->
+          <div class="modal fade" id="forget-pass" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-marg">
+              <div class="modal-content model-radius">
+                <div class="modal-header modal-head">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title" id="myModalLabel">FORGOT PASSWORD</h4>
+                </div>
+                <div class="modal-body modal-mid-txt">
+                  <form>
+                    <div class="form-group"> 
+                      <input type="email" class="form-control form-ctl" id="" placeholder="Email">
+                    </div>
+                  </form>
+                </div>
+                <div class="cls"></div>
+                <div class="modal-footer modal-foot">
+                  <button type="button" class="btn modal-btn">SEND</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- forgot-pass-modal-ends --> 
+
+    <script>
+       var shiftWindow = function() { scrollBy(0, -90) };
+      window.addEventListener("hashchange", shiftWindow);
+      function load() { if (window.location.hash) shiftWindow(); }
+
+
+
+    $("#about_relish").click(function(){
+      $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top - 90 }  ) 
+      
+          })
+    </script>
+
+
+        <script type="text/javascript">
+
+          // $(function () {
+          //   $("#school_id").selectbox();
+          // });
+          // $(function () {
+          //   $("#enroll_id").selectbox();
+          // });
+          // $(function () {
+          //   $("#aclll_id").selectbox();
+          // });
+          // $(function () {
+          //   $("#company_id").selectbox();
+          // });
+          // $(function () {
+          //   $("#website_id").selectbox();
+          // });
+          // $(function () {
+          //   $("#recruiter_id").selectbox();
+          // });
+
+         
+        </script>
+
+        <script type="text/javascript">
+      function validateEmail(email) {
+          var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+          return re.test(email);
+      }
+      function postMbaFormToGoogle(){
+          var name = $('#mba_name').val();
+          var email = $('#mba_email').val();
+          var school = $('#mba_school').val();
+          var enrollment_status = $('#enroll_id').val();
+          var email_subscription = $('#mbaEditSubscription').is(":checked") ? "yes" : ""   
+      
+          if ((name !== "") && (email !== "") && ((school !== "") &&( enrollment_status != "")&& (validateEmail(email)))) {
+              $.ajax({
+                  url: "https://docs.google.com/forms/d/1Y6S_6hSQ0ckCd7YbkYMWyWdak5XrodSDtFFyvVaSSYw/formResponse",
+                  data: {"entry.952308583" : name, "entry.116399843" : email, "entry.966907909": school, "entry.2067562963": enrollment_status, "entry.430109666": email_subscription},              
+                  type: "POST",
+                  dataType: "xml",
+                  statusCode: {
+                      0: function (){
+                      $("#mba-students").modal('hide');
+                      success_dialog('MBA STUDENTS');                    
+   
+                          mbaStudentFieldClear();
+
+                          //Success message
+                      },
+                      200: function (){
+                          
+                          //Success Message
+                      }
+                  }
+              });
+          }
+          else if(email !== "" && !(validateEmail(email))){
+            alert("Please enter valid email.")
+          }
+          else {
+            alert("Please fill out all fields")
+              //Error message
+          }
+      }   
+      
+      $('#mba-students').on('hidden.bs.modal', function () {
+         mbaStudentFieldClear();
+      });
+
+
+      function success_dialog(title){
+        BootstrapDialog.show({
+                  type: BootstrapDialog.TYPE_SUCCESS,
+                  title: title,
+                  animate: false,
+                  message: "Thanks for providing your info! We're working to bring RelishMBA to more schools and employers for the 2015-16 school year, and we'll be in touch when we have more updates."
+                 
+              });     
+      }
+
+      function postEmployersToGoogle(){
+          var name = $('#employer_name').val();
+          var email = $('#employer_email').val();
+          var job_title = $('#employer_job_title').val();
+          var company = $('#employer_company').val();        
+          var recruits = $('#recruiter_id').val();
+          var email_subscription = $('#employerEditSubscription').is(":checked") ? "yes" : ""
+      
+
+          if ((name !== "") && (email !== "") && ((job_title !== "") &&( company != "") &&( recruits != "")&& (validateEmail(email)))) {
+              $.ajax({
+                  url: "https://docs.google.com/forms/d/1xdogmL6FWjAm9AwhW5Tf1QN2lDc81-fV4ObipkUeNfU/formResponse",
+                  data: {"entry.498709473" : name, "entry.1486734333" : email, "entry.1912062000": job_title, "entry.53754017": company, "entry.673326151": recruits, "entry.2111399720": email_subscription},              
+                  type: "POST",
+                  dataType: "xml",
+                  statusCode: {
+                      0: function (){
+                          $("#employers").modal('hide');
+                          success_dialog('EMPLOYERS');                      
+                          empFieldClear();
+                          //Success message
+                      },
+                      200: function (){
+                          
+                          //Success Message
+                      }
+                  }
+              });
+          }
+          else if(email !== "" && !(validateEmail(email))){
+            alert("Please enter valid email.")
+          }
+          else {
+            alert("Please fill out all fields") 
+              //Error message
+          }
+      }
+
+       $('#employers').on('hidden.bs.modal', function () {
+          empFieldClear();
+      });
+
+      function postCarrierServiceToGoogle(){
+          var name = $('#carrier_service_name').val();
+          var email = $('#carrier_service_email').val();
+          var school = $('#carrier_service_school').val();
+          var job_title = $('#carrier_service_job_title').val();
+          var email_subscription = $('#CarrierServiceEditSubscription').is(":checked") ? "yes" : ""
+      
+
+          if ((name !== "") && (email !== "") && ((school !== "") &&( job_title != "") && (validateEmail(email)))) {
+              $.ajax({
+                  url: "https://docs.google.com/forms/d/1MA2D6davQeq03KegsGYO3MshTgkT4HMBrpkUyHJi4v0/formResponse",
+                  data: {"entry.1632104452" : name, "entry.1212136203" : email, "entry.1852788410": school, "entry.1810691662": job_title, "entry.285887248": email_subscription},              
+                  type: "POST",
+                  dataType: "xml",
+                  statusCode: {
+                      0: function (){
+                          $("#career").modal('hide');
+                          success_dialog('CAREER SERVICES');
+                          carrierFieldClear();
+                          //Success message
+                      },
+                      200: function (){
+                          
+                          //Success Message
+                      }
+                  }
+              });
+          }
+          else if(email !== "" && !(validateEmail(email))){
+            alert("Please enter valid email.")
+          }
+          else {
+            alert("Please fill out all fields")
+              //Error message
+          }
+      }
+
+  $('#career').on('hidden.bs.modal', function () {
+      carrierFieldClear();
+  });
+
+
+  function empFieldClear(){
+    $('#employer_name').val("");
+    $('#employer_email').val("");
+    $('#employer_job_title').val("");
+    $('#employer_company').val("");
+  }
+
+  function mbaStudentFieldClear(){
+    $('#mba_name').val("");
+    $('#mba_email').val("");
+    $('#mba_school').val("");
+    $('#mba_enrollment_status').val("");
+  }
+
+  function carrierFieldClear(){
+    $('#carrier_service_name').val("");
+    $('#carrier_service_email').val("");
+    $('#carrier_service_school').val("");
+    $('#carrier_service_job_title').val("");
+  }
+
+  </script>
+
+    </body>
+  </html>
