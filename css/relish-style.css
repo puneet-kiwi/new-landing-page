@@ -1112,7 +1112,7 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
   .hmtop {
     font-size: 19px;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 2px;
   }
 
   .panel-btn {
