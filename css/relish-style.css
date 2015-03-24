@@ -1212,7 +1212,7 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
   }
 
   .modal-btn {
-    font-size: 18px !important;
+    font-size: 16px !important;
     height: 50px;
   }
 
@@ -1308,7 +1308,7 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
      color: #ffffff !important;
      text-align: center;
      line-height: 25px;
-     padding: 0px 14px;
+     padding: 0px 10px;
      height: 32px;
   }
 
@@ -1446,7 +1446,7 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
  }
 
  .modal-btn {
-   font-size: 18px !important;
+   font-size: 16px !important;
    height: 50px;
  }
 
