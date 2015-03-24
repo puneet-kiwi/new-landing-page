@@ -1323,6 +1323,11 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
   .no-pad{
     padding: 0 !important;
   }
+
+  .help-text {
+    font-size: 11px;
+  }
+
 }
 
 @media screen and (max-width: 320px){
@@ -1547,8 +1552,15 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
    margin-bottom: 24px;
  }
 
+ .help-text {
+    font-size: 11px;
+  }
+
 
 }
+
+
+
 .modal-open .navbar{
     margin-left: -15px;
 }
