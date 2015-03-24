@@ -103,6 +103,9 @@ h4 {
 .no-pad{
   padding: 0 !important;
 }
+.modal{
+  z-index: 99999;
+}
 .panel-text {
   font-family: 'RobotoRegular';
   font-size: 16px !important;
